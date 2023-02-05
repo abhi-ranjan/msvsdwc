@@ -123,8 +123,36 @@ sudo apt install python3.10-venv
 sudo apt install build-essential
 ```
 ## Create inverter and perform pre-layout using xschem or ngspice
+---
+### Verifiying the open_pdk installation
+An initial working directory can be made by copying the required files as follows:
+```verilog
+$ mkdir week0
+$ cd week0
+$ mkdir inverter
+$ cd inverter
+$ mkdir mag
+$ mkdir netgen
+$ mkdir xschem
+$ cd xschem
+$ cp /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc .
+$ cp /usr/local/share/pdk/sky130A/libs.tech/ngspice/spinit .spiceinit
+$ cd ../mag
+$ cp /usr/local/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc .magicrc
+$ cd ../netgen
+$ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
+```
 
+#### Checking if magic works
+![Screenshot (2349)](https://user-images.githubusercontent.com/120498080/216841764-9ac44211-75a4-48ab-be48-210c3653827c.png)
 
+#### Checking if xschem works
+
+#### Checking if netgen works
+
+#### Checking if ngspice works
+
+### Creating inverter schematic using xschem
 # Reference
 - [Installing Tools](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
 - [Installing ALIGN](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
