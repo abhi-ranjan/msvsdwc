@@ -1,7 +1,18 @@
 # msvsdwc
 
+## *Table of Contents*
 
-# Software Installation
+* [Week 0](#week-0)
+     + [Software Installation](#Software-Installation)
+     + [Create inverter and perform pre-layout using xschem or ngspice](#Create-inverter-and-perform-pre-layout-using-xschem-or-ngspice)
+
+
+
+
+# Week 0
+---
+## Software Installation
+---
 If we have a windows machine, install Oracle virtual box with Ubuntu 20.04 - RAM at least 4GB, hard-disk atleast 120GB.
 
 - First update ubuntu with command 
@@ -27,7 +38,7 @@ $ sudo apt-get install libxaw7-dev
 $ sudo apt-get install lib32readline8 lib32readline-dev
 $ sudo apt-get install libreadline-dev 
 ```
-## Magic
+### Magic
 Magic is an open-source VLSI layout tool.
 
 Install steps:
@@ -40,7 +51,7 @@ $  sudo make install
 ```
 - [More Info](http://opencircuitdesign.com/magic/index.html)
 
-## Netgen
+### Netgen
 Netgen is a tool for comparing netlists, a process known as LVS, which stands for "Layout vs. Schematic"
 
 Install steps:
@@ -53,7 +64,7 @@ $  sudo make install
 ```
 - [More Info](http://opencircuitdesign.com/netgen/index.html)
 
-## Xschem
+### Xschem
 Xschem is a schematic capture program
 
 Install steps:
@@ -67,7 +78,7 @@ $  sudo make install
 - [More Info](http://repo.hu/projects/xschem/index.html)
 
 
-## Ngspice
+### Ngspice
 ngspice is the open-source spice simulator for electric and electronic circuits.
 
 Install steps:
@@ -84,7 +95,7 @@ After downloading the tarball [from](https://sourceforge.net/projects/ngspice/fi
  $ sudo make install
 ```
 
-## open_pdk
+### open_pdk
 Open_PDKs is distributed with files that support the Google/SkyWater sky130 open process description https://github.com/google/skywater-pdk. Open_PDKs will set up an environment for using the SkyWater sky130 process with open-source EDA tools and tool flows such as magic, qflow, openlane, netgen, klayout, etc.
 
 Install steps:
@@ -97,7 +108,7 @@ $  sudo make install
 ```
 
 
-# ALIGN
+### ALIGN
 
 - First Install Python 3.7
 ```verilog
@@ -111,7 +122,10 @@ sudo apt install python3.10-venv
 ```verilog
 sudo apt install build-essential
 ```
+## Create inverter and perform pre-layout using xschem or ngspice
 
 
 # Reference
 - [Installing Tools](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
+- [Installing ALIGN](https://github.com/sanampudig/OpenFASoC/tree/main/AUXCELL)
+- [Creating Inverter](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-1---Understanding-the-design-flow)
