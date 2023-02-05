@@ -144,7 +144,7 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 ```
 
 #### Checking if magic works
-![Screenshot (2349)](https://user-images.githubusercontent.com/120498080/216841764-9ac44211-75a4-48ab-be48-210c3653827c.png)
+![Screenshot (2349)](https://user-images.githubusercontent.com/120498080/216841828-3dfd5129-c4ad-4af6-997d-8c8634d1e13d.png)
 
 #### Checking if xschem works
 
