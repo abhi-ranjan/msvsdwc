@@ -95,3 +95,23 @@ $	./configure --enable-sky130-pdk
 $  make
 $  sudo make install
 ```
+
+
+# ALIGN
+
+- First Install Python 3.7
+```verilog
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.7
+sudo apt install python3.10-venv
+```
+
+- Install gcc
+```verilog
+sudo apt install build-essential
+```
+
+
+# Reference
+- [Installing Tools](https://github.com/yathAg/Physical_Verification_SKY130A#Chapter-0---Getting-the-tools)
