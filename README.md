@@ -147,10 +147,13 @@ $ cp /usr/local/share/pdk/sky130A/libs.tech/netgen//sky130A_setup.tcl .
 ![Screenshot (2349)](https://user-images.githubusercontent.com/120498080/216841828-3dfd5129-c4ad-4af6-997d-8c8634d1e13d.png)
 
 #### Checking if xschem works
+![Screenshot (2346)](https://user-images.githubusercontent.com/120498080/216841917-17b9de64-f540-4e59-ba36-c280df58d01f.png)
 
 #### Checking if netgen works
+![Screenshot (2347)](https://user-images.githubusercontent.com/120498080/216841939-96bf7b43-b927-4fce-93b9-8e35eb73e2cb.png)
 
 #### Checking if ngspice works
+![Screenshot (2348)](https://user-images.githubusercontent.com/120498080/216841960-9d9aa965-ac18-459c-9c5c-ed28e1804fde.png)
 
 ### Creating inverter schematic using xschem
 # Reference
