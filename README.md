@@ -23,7 +23,7 @@ As a preparation for the work, we are going to install the following software in
 |6	|ALIGN	|Analog Netlist to GDS|
 ## Software Installation
 ---
-If we have a windows machine, install Oracle virtual box with Ubuntu 20.04 - RAM at least 4GB, hard-disk atleast 120GB.
+We have a windows machine, install Oracle virtual box with Ubuntu 20.04 - RAM at least 4GB, hard-disk atleast 120GB.
 
 - First update ubuntu with command 
 ```verilog
@@ -120,17 +120,49 @@ $  sudo make install
 
 ### ALIGN
 
-- First Install Python 3.7
+- Installing ALIGN
 ```verilog
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt install python3.7
-sudo apt install python3.10-venv
+# Clone the ALIGN source
+git clone https://github.com/ALIGN-analoglayout/ALIGN-public
+
+cd ALIGN-public
+
+# Install virtual environment for python
+sudo apt -y install python3.8-venv
+
+# Install the latest pip
+sudo apt-get -y install python3-pip
+
+# Create python virtual envronment
+python3 -m venv general
+
+source general/bin/activate
+
+python3 -m pip install pip --upgrade
+
+pip install pandas
+pip install scipy
+pip install nltk
+pip install gensim
+
+pip install setuptools wheel pybind11 scikit-build cmake ninja
+
+# Install ALIGN as a user
+pip install -v .
+
+# Install ALIGN  as a developer
+pip install -e .
+
+pip install -v -e .[test] --no-build-isolation
+pip install -v --no-build-isolation -e . --no-deps --install-option='-DBUILD_TESTING=ON'
+
 ```
 
-- Install gcc
+- Clone the Sky130 PDK
 ```verilog
-sudo apt install build-essential
+cd ~/software/ALIGN-public
+
+git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
 ```
 ## Create inverter and perform pre-layout using xschem or ngspice
 ---
