@@ -11,6 +11,16 @@
 
 # Week 0
 ---
+As a preparation for the work, we are going to install the following software in Ubuntu 20.04. I created the scripts in the following numbered order, it is best if they are run in the same order.
+
+|	|Software|	Description|
+| --- | --- | ---|
+|1	|magic|	Layout Editor|
+|2	|ngspice	|SPICE Simulation|
+|4	|xschem	|Schematic Editor|
+|3	|netgen	|Netlist Generator|
+|5	|Open PDK (Sky130)	|Sky130 library|
+|6	|ALIGN	|Analog Netlist to GDS|
 ## Software Installation
 ---
 If we have a windows machine, install Oracle virtual box with Ubuntu 20.04 - RAM at least 4GB, hard-disk atleast 120GB.
