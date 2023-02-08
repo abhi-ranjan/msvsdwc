@@ -147,6 +147,12 @@ pip install gensim
 
 pip install setuptools wheel pybind11 scikit-build cmake ninja
 
+# Install Boost using
+sudo apt-get install libboost-all-dev
+# Installing lp_slove
+sudo apt-get update
+sudo apt-get install lp-solve
+
 # Install ALIGN as a user
 pip install -v .
 
