@@ -100,7 +100,7 @@ After downloading the tarball [from](https://sourceforge.net/projects/ngspice/fi
  $ cd ngspice-37
  $ mkdir release
  $ cd release
- $ ./configure  --with-x --with-readline=yes --disable-debug
+ $ ../configure  --with-x --with-readline=yes --disable-debug
  $ make
  $ sudo make install
 ```
