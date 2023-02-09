@@ -170,6 +170,15 @@ cd ~/software/ALIGN-public
 
 git clone https://github.com/ALIGN-analoglayout/ALIGN-pdk-sky130
 ```
+- If faced this error 
+![Screenshot (2367)](https://user-images.githubusercontent.com/120498080/217863997-011b9abe-ec8c-4bce-9721-8f49fa598f7e.png)
+- Solution
+```
+# First update setuptools
+pip install -U setuptools
+# Then use the correct package for dotenv, which is python-dotenv.
+pip install python-dotenv
+```
 ## Create inverter and perform pre-layout using xschem or ngspice
 ---
 ### Verifiying the open_pdk installation
